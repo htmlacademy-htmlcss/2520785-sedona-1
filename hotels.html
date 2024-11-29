@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Страница каталога</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="index.html">
+      <img src="./img/logo.png" alt="Логотип" width="138px" height="64px">
+       </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="main.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about-sedona.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+    
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visuallly-hidden">Хочу Сюда</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-inner">
+      <header class="inner-header">
+       <h1 class="inner-header-title">Гостиницы Седоны</h1>
+       <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span>
+          <img src="./img/home.png" alt="Главная" width="13px" height="15px">
+           </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+       </ul>
+      </header>  
+      
+      <section class="list-of-hotels">
+        <h2 class="visuallly-hidden">Список гостиниц</h2>
+        <form class="hotels-filter" action="#" method="get">
+          <legend class="hotels-filter-title">Инфраструктура:</legend>
+          <ul class="hotels-filter-list">
+            <li class="hotels-filter-item">
+             <label for="control">
+               <input class="control-input" type="checkbox" checked name="swimming pool"> 
+             Бассейн
+             </label>
+            </li>
+            <li class="hotels-filter-item">
+              <label for="control">
+                <input class="control-input" type="checkbox" checked name="parking"> 
+              Парковка
+              </label>
+             </li>
+             <li class="hotels-filter-item">
+              <label for="control">
+                <input class="control-input" type="checkbox" name="Wi-Fi"> 
+              Wi-Fi
+              </label>
+             </li>
+          </ul>  
+
+          <legend class="hotels-filter-title">Тип Жилья:</legend>
+           <ul class="hotels-filter-list">
+            <li class="hotels-filter-item">
+              <label for="control">
+                <input class="control-input" type="radio" name="list-of-hotels" checked> 
+              Гостиница
+              </label>
+             </li>
+             <li class="hotels-filter-item">
+              <label for="control">
+                <input class="control-input" type="radio" name="list-of-hotels"> 
+              Мотель
+              </label>
+             </li>
+             <li class="hotels-filter-item">
+              <label for="control">
+                <input class="control-input" type="radio" name="list-of-hotels"> 
+              Апортаменты
+              </label>
+             </li>
+          </ul>
+         
+          <legend class="hotels-filter-title">Тип Жилья:</legend>
+           <div class="hotels-filter-list">
+            <input type="number" class="hotels-filter-item" min="0" max="9000" value="0" step="100">
+            <input type="number" class="hotels-filter-item" min="0" max="9000" value="9000" step="100">
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
