@@ -35,7 +35,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    < class="main-inner">
       <header class="inner-header">
        <h1 class="inner-header-title">Гостиницы Седоны</h1>
        <ul class="breadcrumbs">
@@ -101,8 +101,27 @@
            <div class="hotels-filter-list">
             <input type="number" class="hotels-filter-item" min="0" max="9000" value="0" step="100">
             <input type="number" class="hotels-filter-item" min="0" max="9000" value="9000" step="100">
+            <input type="submit" value="ПРИМЕНИТЬ">
+            <input type="submit" value="СБРОСИТЬ">
           </div>
+          
+
         </form>
+      </section>
+      <section>
+        <div class="header-seach">НАЙДЕНО СТРАНИЦ: 38
+          <form>
+            <label for="filter"></label>
+            <select id="filter" name="filter">
+              <option value="Сначала дешевые">Сначала дешевые</option>
+              <option value="Сначала дороже">Сначала дороже</option>
+              <option value="По дате">По дате</option>
+            </select>
+          </form>
+        </div>
+
+
+
       </section>
     </main>
   </body>
