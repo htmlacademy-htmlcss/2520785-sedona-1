@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Страница каталога</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
@@ -100,7 +101,7 @@
              </li>
           </ul>
          
-          <legend class="hotels-filter-title">Тип Жилья:</legend>
+          <legend class="hotels-filter-title">Стоимость,₽:</legend>
            <div class="hotels-filter-list">
             <input type="number" class="hotels-filter-item" min="0" max="9000" value="0" step="100">
             <input type="number" class="hotels-filter-item" min="0" max="9000" value="9000" step="100">
@@ -112,7 +113,8 @@
         </form>
       </section>
       <section>
-        <div class="header-seach">НАЙДЕНО СТРАНИЦ: 38
+        <div class="header-search">
+          <p class="page-search">НАЙДЕНО СТРАНИЦ: 38</p>
           <form>
             <label for="filter"></label>
             <select id="filter" name="filter">
@@ -133,7 +135,7 @@
             <span class="product-type">Гостиница</span>
             <span class="product-card-price">От 4000 ₽</span>
             <a class="button-link" href="#">Подробнее</a>
-            <button class="button" href="#">В избранное</button>
+            <button class="button-favorites">В избранное</button>
             <img src="./img/four-stars.svg" alt="Четыре звезды">
             <span class="rating">Рейтинг: 8,5</span>
           </li>
@@ -145,7 +147,7 @@
             <span class="product-type">Гостиница</span>
             <span class="product-card-price">От 5000 ₽</span>
             <a class="button-link" href="#">Подробнее</a>
-            <button class="button" href="#">В избранное</button>
+            <button class="button-favorites button-favorites-touch">В избранном</button>
             <img src="./img/four-stars.svg" alt="Четыре звезды">
             <span class="rating">Рейтинг: 9,2</span>
           </li>
@@ -157,7 +159,7 @@
             <span class="product-type">Гостиница</span>
             <span class="product-card-price">От 2500 ₽</span>
             <a class="button-link" href="#">Подробнее</a>
-            <button class="button" href="#">В избранное</button>
+            <button class="button-favorites">В избранное</button>
             <img src="./img/three-stars.svg" alt="Три звезды">
             <span class="rating">Рейтинг: 6,9</span>
           </li>
@@ -169,7 +171,7 @@
             <span class="product-type">Гостиница</span>
             <span class="product-card-price">От 1500 ₽</span>
             <a class="button-link" href="#">Подробнее</a>
-            <button class="button" href="#">В избранное</button>
+            <button class="button-favorites">В избранное</button>
             <img src="./img/two-stars.svg" alt="Две звезды">
             <span class="rating">Рейтинг: 5,0</span>
           </li>
@@ -183,13 +185,14 @@
         <a href="#">...</a>
         <a href="#">10</a>
       </section>
-      <section>
-        <strong>ПОДПИШИТЕСЬ НА РАССЫЛКУ</strong>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe">
+        <h2 class="section-header section-header-color">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <p class="section-header-text section-header-text-color">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form>
           <input type="email" placeholder="Ваш e-mail">
           <button type="submit">ПОДПИСАТЬСЯ</button>
           </form>
+          <img src="./img/subscription-background.jpg" width=1200px height=414,86px>
       </section>
     </main>
     <footer class="page-footer">
@@ -215,8 +218,9 @@
       </section>
     
       <section class="footer-logo">
-        <img src="./img/logo-htmlacademy.png" alt="Логотип-htmlacademy" width="115" height="33">
-        <a href="https://htmlacademy.ru/"><span class="visuallly-hidden">Логотип-htmlacademy</span></a>
+        <a href="https://htmlacademy.ru/"><span class="visuallly-hidden">Логотип-htmlacademy</span>
+          <img src="./img/logo-htmlacademy.png" alt="Логотип-htmlacademy" width="115" height="33">
+        </a>
       </section>
     
     </footer>
