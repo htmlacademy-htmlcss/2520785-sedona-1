@@ -56,8 +56,9 @@ body {
     height: 36px;
     padding: 8px 50px 8px 50px;
 }
-.welcome img {
-    background-image: url("img/index-background.png");
+.welcome  {
+    background-image: url("../img/index-background.png");
+    background-repeat: no-repeat;
 }
 .section-header {
     font-size: 30px;
@@ -69,12 +70,22 @@ body {
 .section-header-text {
     font-size: 22px;
     line-height: 26px;
+    width: 592px;
+    height: 52px;
+
 }
 .advantages-list p {
     font-size: 18px;
     line-height: 21px;
 }
-
+.advantages-title {
+    font-size: 24px;
+    font-weight:700;
+    line-height: 28px;
+    text-transform: uppercase;
+    width: 175px;
+    height: 56px;
+}
 .advantages-item {
     width: 400px;
     height: 385px;
@@ -99,6 +110,8 @@ body {
     width: 376px;
     height: 52px;
     padding: 8px 50px 8px 50px;
+    text-decoration: none;
+    color: #ffffff;
 }
 .advantages-discription {
     font-size: 18px;
@@ -110,9 +123,13 @@ body {
 .section-header-text.section-header-text-color {
     color: #ffffff;
 }
-.subscribe img {
+.subscribe  {
+    background-image: url("../img/subscription-background.jpg");
     padding: 96px 258px 104px 258px;
-}
+};
+   
+
+
 .subscribe button {
     width: 232px;
     height: 52px;
@@ -126,16 +143,20 @@ body {
     height: 52px;
     padding: 12px 20px 12px 20px;
 }
-.subscribe img {
-    background-image: url("img/subscription-background.jpg");
-}
+
+    
 .footer-contact-phone {
     font-size: 40px;
     line-height: 40px;
     color: black;
     text-decoration: none;
 }
-.inner-header-title {
+.inner-section {
+    background-image: url(../img/catalog-background.jpg);
+    background-repeat: no-repeat;
+}
+
+.inner-title {
     font-size: 60px;
     font-weight: 700;
     line-height: 78px;
@@ -200,6 +221,7 @@ body {
     padding: 8px 50px 8px 50px;
     background-color: #756157;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .button-favorites {
     font-size: 16px;
@@ -208,9 +230,10 @@ body {
     color: #ffffff;
     width: 140px;
     height: 36px;
-    padding: 8px 50px 8px 50px;
+    padding: 8px 7px 8px 7px;
     background-color: #82B3D3;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .button-favorites.button-favorites-touch {
     background-color: #7DB54F;
