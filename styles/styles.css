@@ -27,18 +27,37 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     text-align: center;
     background-color: #ffffff;
     color: black;
+}
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .navigation-list {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 600px;
     
+}
+.navigation-user {
+    width: 600px;
 }
 .navigation-list a {
     color: black;
@@ -56,9 +75,18 @@ body {
     height: 36px;
     padding: 8px 50px 8px 50px;
 }
+.main-container {
+    flex-grow: 1;
+}
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
 .welcome  {
     background-image: url("../img/index-background.png");
     background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
 }
 .section-header {
     font-size: 30px;
@@ -74,6 +102,33 @@ body {
     height: 52px;
 
 }
+
+.advantages-list {
+    
+    width: 1200px;
+    
+    
+    margin: 0;
+    padding: 0;
+}
+
+.list-first li {
+    display: flex;
+    justify-content: space-between
+}
+
+.list-first-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.list-first-block img {
+    display: block;
+}
+
 .advantages-list p {
     font-size: 18px;
     line-height: 21px;
@@ -86,12 +141,12 @@ body {
     width: 175px;
     height: 56px;
 }
-.advantages-item {
+/* .advantages-item {
     width: 400px;
     height: 385px;
     padding: 103px 85px 103px 85px;
     
-}
+} */
 .advantages-item.advantages-color-dark {
     background-color: #82B3D3;
     color: #ffffff;
@@ -116,7 +171,9 @@ body {
 .advantages-discription {
     font-size: 18px;
     line-height: 21px;
+    max-width: 230px;
 }
+
 .section-header-color {
     color: #ffffff;
 }
