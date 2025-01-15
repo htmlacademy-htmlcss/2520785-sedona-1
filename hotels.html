@@ -7,11 +7,11 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html">
-      <img src="./img/logo.svg" alt="Логотип" width="138" height="64">
-       </a>
       <nav class="navigation">
-        <ul class="navigation-list">
+        <a href="index.html" class="navigation-logo">
+          <img src="./img/logo.svg" width="138" height="64" alt="Logo">
+        </a>
+        <ul class="navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link" href="main.html">Главная</a>
           </li>
@@ -19,11 +19,11 @@
             <a class="navigation-link" href="about-sedona.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
+            <a class="navigation-link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
     
-        <ul class="navigation-user">
+        <ul class="navigation-user list-reset">
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#"><span class="visually-hidden"></span>
             <img src="./img/search.svg" alt="Поиск"></a>
@@ -38,82 +38,78 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
+     <div class="page-container">
       <section class="inner-section">
        <div class="breadcrumbs-list">
-       <h1 class="inner-title">Гостиницы Седоны</h1>
-       <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span>
-          <img src="./img/home.png" alt="Главная" width="13" height="15">
-           </a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
-        </li>
-       </ul>
-       </div>
-       
-      
-       <div class="list-of-hotels">
-        <h2 class="visuallly-hidden">Список гостиниц</h2>
-        <form class="hotels-filter" action="#" method="get">
-          <legend class="hotels-filter-title">Инфраструктура:</legend>
-          <ul class="hotels-filter-list">
-            <li class="hotels-filter-item">
-             <label for="control">
-               <input class="control-input" type="checkbox" checked name="swimming pool"> 
-             Бассейн
-             </label>
-            </li>
-            <li class="hotels-filter-item">
-              <label for="control">
-                <input class="control-input" type="checkbox" checked name="parking"> 
-              Парковка
-              </label>
+          <h1 class="inner-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs list-reset">
+               <li class="breadcrumbs-item">
+                 <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span>
+                    <img src="./img/home.png" alt="Главная" width="13" height="15">
+                 </a>
              </li>
-             <li class="hotels-filter-item">
-              <label for="control">
-                <input class="control-input" type="checkbox" name="Wi-Fi"> 
-              Wi-Fi
-              </label>
-             </li>
-          </ul>  
-
-          <legend class="hotels-filter-title">Тип Жилья:</legend>
-           <ul class="hotels-filter-list">
-            <li class="hotels-filter-item">
-              <label for="control">
-                <input class="control-input" type="radio" name="list-of-hotels" checked> 
-              Гостиница
-              </label>
-             </li>
-             <li class="hotels-filter-item">
-              <label for="control">
-                <input class="control-input" type="radio" name="list-of-hotels"> 
-              Мотель
-              </label>
-             </li>
-             <li class="hotels-filter-item">
-              <label for="control">
-                <input class="control-input" type="radio" name="list-of-hotels"> 
-              Апортаменты
-              </label>
-             </li>
-          </ul>
-         
-          <legend class="hotels-filter-title">Стоимость,₽:</legend>
-           <div class="hotels-filter-list">
-            <input type="number" class="hotels-filter-item" min="0" max="9000" value="0" step="100">
-            <input type="number" class="hotels-filter-item" min="0" max="9000" value="9000" step="100">
-            <input type="submit" value="ПРИМЕНИТЬ">
-            <input type="submit" value="СБРОСИТЬ">
-          </div>
+               <li class="breadcrumbs-item">
+                 <a class="breadcrumbs-link">Гостиницы</a>
+              </li>
+           </ul>
+        </div>
+           <div class="list-of-hotels">
+                  <h2 class="visuallly-hidden" hidden>Список гостиниц</h2>
+              <form class="hotels-filter" action="#" method="get">
+                  <div class="filter-first">
+                     <legend class="hotels-filter-title">Инфраструктура:</legend>
+                     <ul class="hotels-filter-list list-reset">
+                        <li class="hotels-filter-item">
+                          <label for="control">
+                              <input class="control-input" type="checkbox" checked name="swimming pool">Бассейн
+                          </label>
+                        </li>
+                        <li class="hotels-filter-item">
+                            <label for="control">
+                              <input class="control-input" type="checkbox" checked name="parking">Парковка
+                            </label>
+                        </li>
+                        <li class="hotels-filter-item">
+                            <label for="control">
+                              <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+                            </label>
+                         </li>
+                      </ul>  
+                    </div>
+                    <div class="filter-second">
+                        <legend class="hotels-filter-title">Тип Жилья:</legend>
+                          <ul class="hotels-filter-list list-reset">
+                            <li class="hotels-filter-item">
+                                <label for="control">
+                                  <input class="control-input" type="radio" name="list-of-hotels" checked>Гостиница
+                                </label>
+                              </li>
+                              <li class="hotels-filter-item">
+                                  <label for="control">
+                                    <input class="control-input" type="radio" name="list-of-hotels">Мотель
+                                  </label>
+                                </li>
+                                <li class="hotels-filter-item">
+                                    <label for="control">
+                                      <input class="control-input" type="radio" name="list-of-hotels">Апортаменты
+                                    </label>
+                                </li>
+                           </ul>
+                       </div>
+                    <div class="filter-third">
+                      <legend class="hotels-filter-title">Стоимость,₽:</legend>
+                      <div class="hotels-filter-list">
+                        <input type="number" class="hotels-filter-item" min="0" max="9000" value="0" step="100">
+                        <input type="number" class="hotels-filter-item" min="0" max="9000" value="9000" step="100">
+                        <input type="submit" value="ПРИМЕНИТЬ">
+                        <input type="submit" value="СБРОСИТЬ">
+                      </div>
+                    </div>>
+              </form>
+           </div>
           
-
-        </form>
-       </div>
-      </section>
+       </section>
       <section>
         <div class="header-search">
           <p class="page-search">НАЙДЕНО СТРАНИЦ: 38</p>
@@ -128,7 +124,7 @@
         </div>
       </section>
       <section class="catalog-products">
-        <ul class="product-list">
+        <ul class="product-list list-reset">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="./img/hotels/hotel-1.jpg" alt="hotel-1">
@@ -180,50 +176,52 @@
         </ul>
       </section>
       <section class="pagination">
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">...</a>
-        <a href="#">10</a>
+        <div class="pagination-item">
+            <a href="#" class="pagination-link active">1</a>
+            <a href="#" class="pagination-link">2</a>
+            <a href="#" class="pagination-link">3</a>
+            <a href="#" class="pagination-link">4</a>
+            <a href="#" class="pagination-link ellipsis">...</a>
+            <a href="#" class="pagination-link">10</a>
+         </div>
       </section>
       <section class="subscribe">
         <h2 class="section-header section-header-color">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p class="section-header-text section-header-text-color">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form>
+        <form class="subscribe-form">
           <input type="email" placeholder="Ваш e-mail">
-          <button type="submit">ПОДПИСАТЬСЯ</button>
-          </form>
+          <button type="submit" class="button-subscribe">ПОДПИСАТЬСЯ</button>
+        </form>
       </section>
+    </div>
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a href="https://vk.com/htmlacademy"> <span class="visuallly-hidden">Вконтакте</span></a>
-            <img src="./img/social network/social-vk.svg" alt="logo-vk" width="47.33" height="40">
-          </li>
-          <li class="footer-social-item">
-            <a href="https://t.me/htmlacademy"> <span class="visuallly-hidden">Телеграм</span></a>
-            <img src="./img/social network/social-telegram.svg" alt="logo-telegram" width="47.33" height="40">
-          </li>
-          <li class="footer-social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru"> <span class="visuallly-hidden">Ютуб</span></a>
-            <img src="./img/social network/social-youtube.svg" alt="logo-youtube" width="47.33" height="40">
-          </li>  
-        </ul>    
-      </section>
-    
-      <section class="footer-contact">
-        <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
-    
-      <section class="footer-logo">
-        <a href="https://htmlacademy.ru/"><span class="visuallly-hidden">Логотип-htmlacademy</span>
-          <img src="./img/logo-htmlacademy.svg" alt="Логотип-htmlacademy" width="115" height="33">
-        </a>
-      </section>
-    
-    </footer>
+      <div class="page-footer-container">
+        <section class="footer-social">
+          <ul class="footer-social-list list-reset">
+            <li class="footer-social-item">
+              <a href="https://vk.com/htmlacademy"> <span class="visuallly-hidden">Вконтакте</span></a>
+              <img src="./img/social network/social-vk.svg" alt="logo-vk" width="47.33" height="40">
+            </li>
+            <li class="footer-social-item">
+              <a href="https://t.me/htmlacademy"> <span class="visuallly-hidden">Телеграм</span></a>
+              <img src="./img/social network/social-telegram.svg" alt="logo-telegram" width="47.33" height="40">
+            </li>
+            <li class="footer-social-item">
+              <a href="https://www.youtube.com/user/htmlacademyru"> <span class="visuallly-hidden">Ютуб</span></a>
+              <img src="./img/social network/social-youtube.svg" alt="logo-youtube" width="47.33" height="40">
+            </li>  
+          </ul>    
+        </section>
+        <section class="footer-contact">
+          <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </section>
+        <section class="footer-logo">
+          <a href="https://htmlacademy.ru/"><span class="visuallly-hidden">Логотип-htmlacademy</span>
+            <img src="./img/logo-htmlacademy.svg" alt="Логотип-htmlacademy" width="115" height="33">
+          </a>
+        </section>
+      </div>
+    </footer>  
   </body>
 </html>
