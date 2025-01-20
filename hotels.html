@@ -49,7 +49,9 @@
                     <img src="./img/home-breadcrambs.svg" alt="Главная" width="13" height="15">
                  </a>
              </li>
-             <img src="./img/arrow-breadcrumbs.svg" alt="Стрелка" class="arrow-breadcrumbs" width="8" height="20">
+                 <div class="arrow-breadcrumbs"> 
+                    <img src="./img/arrow-breadcrumbs.svg" alt="Стрелка" width="8" height="20">
+                 </div>
                <li class="breadcrumbs-item">
                  <a class="breadcrumbs-link">Гостиницы</a>
               </li>
@@ -62,18 +64,18 @@
                      <legend class="hotels-filter-title">Инфраструктура:</legend>
                      <ul class="hotels-filter-list list-reset">
                         <li class="hotels-filter-item">
-                          <label for="control">
-                              <input class="control-input" type="checkbox" checked name="swimming pool">Бассейн
+                          <label for="control-first">
+                              <input class="control-input" type="checkbox" checked name="swimming pool" id="control-first">Бассейн
                           </label>
                         </li>
                         <li class="hotels-filter-item">
-                            <label for="control">
-                              <input class="control-input" type="checkbox" checked name="parking">Парковка
+                            <label for="control-second">
+                              <input class="control-input" type="checkbox" checked name="parking" id="control-second">Парковка
                             </label>
                         </li>
                         <li class="hotels-filter-item">
-                            <label for="control">
-                              <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+                            <label for="control-third">
+                              <input class="control-input" type="checkbox" name="Wi-Fi" id="control-third">Wi-Fi
                             </label>
                          </li>
                       </ul>  
@@ -83,17 +85,17 @@
                           <ul class="hotels-filter-list list-reset">
                             <li class="hotels-filter-item">
                                 <label for="control">
-                                  <input class="control-input" type="radio" name="list-of-hotels" checked>Гостиница
+                                  <input class="control-input" type="radio" name="list-of-hotels" id="control" checked>Гостиница
                                 </label>
                               </li>
                               <li class="hotels-filter-item">
-                                  <label for="control">
-                                    <input class="control-input" type="radio" name="list-of-hotels">Мотель
+                                  <label for="control-two">
+                                    <input class="control-input" type="radio" name="list-of-hotels" id="control-two">Мотель
                                   </label>
                                 </li>
                                 <li class="hotels-filter-item">
-                                    <label for="control">
-                                      <input class="control-input" type="radio" name="list-of-hotels">Апортаменты
+                                    <label for="control-three">
+                                      <input class="control-input" type="radio" name="list-of-hotels" id="control-three">Апортаменты
                                     </label>
                                 </li>
                            </ul>     
@@ -106,6 +108,7 @@
                         <input type="submit" value="ПРИМЕНИТЬ">
                         <input type="submit" value="СБРОСИТЬ">
                       </div>
+                    </div>
               </form>
            </div>
        </section>
@@ -238,15 +241,15 @@
           <ul class="footer-social-list list-reset">
             <li class="footer-social-item">
               <a href="https://vk.com/htmlacademy"> <span class="visually-hidden">Вконтакте</span></a>
-              <img src="./img/social network/social-vk.svg" alt="logo-vk" width="47.33" height="40">
+              <img src="./img/social-network/social-vk.svg" alt="logo-vk" width="48" height="40">
             </li>
             <li class="footer-social-item">
               <a href="https://t.me/htmlacademy"> <span class="visually-hidden">Телеграм</span></a>
-              <img src="./img/social network/social-telegram.svg" alt="logo-telegram" width="47.33" height="40">
+              <img src="./img/social-network/social-telegram.svg" alt="logo-telegram" width="48" height="40">
             </li>
             <li class="footer-social-item">
               <a href="https://www.youtube.com/user/htmlacademyru"> <span class="visually-hidden">Ютуб</span></a>
-              <img src="./img/social network/social-youtube.svg" alt="logo-youtube" width="47.33" height="40">
+              <img src="./img/social-network/social-youtube.svg" alt="logo-youtube" width="48" height="40">
             </li>  
           </ul>    
         </section>
