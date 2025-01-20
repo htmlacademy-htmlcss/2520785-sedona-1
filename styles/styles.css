@@ -386,7 +386,7 @@ body {
     text-transform: uppercase;
 }
 .button-favorites {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
