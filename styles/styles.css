@@ -55,6 +55,10 @@ body {
     margin: 0;
     padding: 0;
 }
+.main-header {
+    width: 1200px;
+    margin: 0 auto;
+}
 .navigation {
     display: flex;
     width: 1200px;
@@ -122,6 +126,10 @@ body {
     background-repeat: no-repeat;
     display: block;
     margin: 0 auto;
+    min-height: 485px;
+}
+.welcome::before {
+    background-image: url("../img/divider.svg");
 }
 .section-header {
     font-size: 30px;
@@ -224,9 +232,10 @@ body {
     background-color: rgba(117, 97, 87, 1);
     width: 376px;
     height: 52px;
-    padding: 8px 50px 8px 50px;
+    padding: 8px 52px 8px 52px;
     text-decoration: none;
     color: #ffffff;
+    border-radius: 4px;
 }
 .advantages-discription {
     font-size: 18px;
@@ -251,15 +260,21 @@ body {
 .button-subscribe  {
     width: 232px;
     height: 52px;
-    padding: 8px 50px 8px 50px;
+    padding: 8px 8px 8px 8px;
     color: #ffffff;
     background-color: rgba(130,179,211,1);
     border: 0;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
 }
-.subscribe input {
+.mail-form {
     width: 452px;
     height: 52px;
     padding: 12px 20px 12px 20px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
 }   
 .footer-contact-phone {
     font-size: 40px;
@@ -333,18 +348,23 @@ body {
 }
 .filter-block-item {
     border: 2px solid black;
+    border-radius: 4px;
     width: 48px;
     height: 48px;
     display: flex;
-    padding: 16px; 
+    padding: 14px; 
 }
 .filter-block-item:not(:last-child) {
     margin-right: 8px;
 }
+.filter-block-gray {
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+}
 .filter-list-arrow {
     position: absolute;
-    right: 10px;
-    top: 15px;
+    right: 25px;
+    top: 20px;
 }
 .filter-block-item img {
     max-width: 100%;
@@ -520,4 +540,8 @@ body {
     width: 1060px;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+.divider {
+    margin: 0 auto;
+    
 }
