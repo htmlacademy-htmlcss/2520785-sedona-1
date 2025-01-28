@@ -15,7 +15,7 @@
     </a>
     <ul class="navigation-list list-reset">
       <li class="navigation-item">
-        <a class="navigation-link line-black" href="main.html">Главная</a>
+        <a class="navigation-link" href="main.html">Главная</a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="about-sedona.html">О Седоне</a>
@@ -39,7 +39,7 @@
         </a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-user-link want" href="#">Хочу Сюда!</a>
+        <a class="navigation-user-link want" href="#">Хочу Сюда</a>
       </li>
     </ul>
   </nav>
@@ -48,7 +48,7 @@
   <div class="page-container">
      <h1 class="visually-hidden">Sedona</h1>
    <section class="welcome">
-     <figure><img src="./img/welcome.svg" class="welcome-images" alt="Приглашение в Седону" width="458" height="352"></figure>
+     <figure><img src="./img/welcome.svg" alt="Приглашение в Седону" width="458" height="352"></figure>
    </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -57,7 +57,8 @@
      <ul class="advantages-list list-reset">
        <li class="advantages-item advantages-color-dark advantages-item-wrapper">
           <div class="advantages-item-text">
-            <h3 class="advantages-title line-bottom">Настоящий городок</h3>
+            <h3 class="advantages-title">Настоящий городок</h3>
+            <div class="restagle-light"></div>
             <p class="advantages-discription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
          </div>
           <div class="advantages-item-image">
@@ -65,20 +66,21 @@
           </div>
         </li>
         <li class="advantages-item advantages-color-light">
-            <h3 class="advantages-title line-bottom-dark">Небольшая площадь</h3>
+            <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-discription">Все достопримечательности находятся очень близко</p>
         </li>
         <li class="advantages-item advantages-color">
-              <h3 class="advantages-title line-bottom-dark">Красивая дорога</h3>
+              <h3 class="advantages-title">Красивая дорога</h3>
               <p class="advantages-discription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="advantages-item advantages-color-light">
-              <h3 class="advantages-title line-bottom-dark">Мало туристов</h3>
+              <h3 class="advantages-title">Мало туристов</h3>
               <p class="advantages-discription">Большинство едет в Гранд Каньон и толпится там</p>
        </li> 
        <li class="advantages-item advantages-color-dark advantages-item-wrap">
           <div class="advantages-item-text">
-              <h3 class="advantages-title line-bottom">Там есть мост дьявола</h3>
+              <h3 class="advantages-title">Там есть мост дьявола</h3>
+              <div class="restagle-light"></div>
               <p class="advantages-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
            </div>
            <div class="advantages-item-image">
@@ -175,6 +177,66 @@
     </section>
   </div>
 </footer>
+</div>
+<div class="modal-container">
+  <div class="modal modal-search">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">поиск гостиницы в седоне</h2>
+      <form class="search-form"  method="post">
+        <div class="field-group">
+              <div class="field-group-label">
+                <label class="date-in" for="date-in">Дата заезда:</label>
+              </div>
+              <div class="field-group-input">
+                  <input class="search-form-field field" type="text" id="date-in" name="date-in" placeholder="27 апреля 2020">
+              </div>
+              <p class="false-message">Мы не можем отправить вас в прошлое</p>
+        </div>
+        <div class="field-group">
+           <div class="field-group-label">
+              <label class="date-out" for="date-out">Дата выезда:</label>
+           </div>
+           <div class="field-group-input">
+              <input class="search-form-field field" type="text" id="date-out" name="date-out" placeholder="1 сентября 2023">
+            </div>
+            <p class="message">На эти даты есть свободные номера. Пока есть.</p>
+        </div>
+        
+        <div class="field-group-list">
+                <div class="field-group-label">
+                    <label class="field-group-older" for="older">Взрослые:</label>
+                </div>
+                <div class="field-group-item">
+                    <button class="min-older" type="button" form="older"></button>
+                    <input class="search-form-count field" type="number" id="older" name="older" placeholder="2">
+                    <button class="plus-older" type="button" form="older"></button>
+                </div>
+                <div class="field-group-label">
+                  <span class="field-group-children group-children-icon">
+                      <label class="field-group-children" for="children">Дети:</label>
+                      <span class="tooltip">
+                        <button class="tooltip-info" type="button" aria-labelledby="tooltip-label-date">
+                            <img src="./img/info.svg" class="tooltip-icon" alt="Информация" width="2" height="12">
+                        </button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      </span>
+                  </span>
+              </div>
+                <div class="field-group-item">
+                    <button class="min-children" type="button" form="children"></button>
+                    <input class="search-form-count field" type="number" id="children" name="children" placeholder="2">
+                    <button class="plus-children" type="button" form="children"></button>
+                </div>
+         </div>
+          <div class="field-button-search">
+            <button class="button-search-list" type="submit">Найти</button>
+        </div>
+      </form>
+    </section>
+  </div>
 </div>  
 </body>
 </html>
